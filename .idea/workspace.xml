@@ -9,15 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1dc1599e-e452-45dd-bc77-95fbaa18e230" name="Changes" comment="">
+    <list default="true" id="1dc1599e-e452-45dd-bc77-95fbaa18e230" name="Changes" comment="ds">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/users/id.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/config/AppConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controllers/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/UserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/UserDaolmp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/UserDaolmp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/servise/UserServiselmp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/servise/UserServiselmp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/users.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/users.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,13 +26,28 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SWAP_SIDES_IN_COMPARE_BRANCHES" value="true" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "kamil116rus"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="3bafbfcf-e7f0-4656-a9c5-eec9eea5a853" />
+        <option name="url" value="git@github.com:/kamil116rus/PP_2_3_1_sprin_mvc_hibernate.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -43,9 +56,9 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2VAXjUwLHk6TmKSdYMO0TQZF3kA" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -60,11 +73,16 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/kamil/IdeaProjects/PP_2_2_1_spring_hibernate",
+    "last_opened_file_path": "/home/kamil/IdeaProjects/untitled5",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "project.propVCSSupport.ChangelistConflict",
+    "spring.configuration.checksum": "edcf523a7d25b80a70409c82eeb9042f",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -79,6 +97,7 @@
       <recent name="$PROJECT_DIR$/src/main" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/users" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
@@ -184,10 +203,47 @@
       <option name="presentableId" value="Default" />
       <updated>1694279997627</updated>
       <workItem from="1694279999206" duration="6109000" />
+      <workItem from="1694286342170" duration="7458000" />
     </task>
+    <task id="LOCAL-00001" summary="ds">
+      <option name="closed" value="true" />
+      <created>1694286789085</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1694286789085</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ds" />
+    <option name="LAST_COMMIT_MESSAGE" value="ds" />
   </component>
 </project>

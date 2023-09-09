@@ -2,13 +2,13 @@ package org.example.model;
 
 import javax.persistence.*;
 
-@Entity
+//@Entity
 @Table(name = "users")
 public class User {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+   // @Id
+   // @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
 
     @Column(name = "name")
     private String firstName;
@@ -23,17 +23,24 @@ public class User {
     public User() {
     }
 
+    public User(int id, String firstName, String lastName, int age) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+    }
+
     public User(String firstName, String lastName, int age) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
     }
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
