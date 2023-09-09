@@ -5,6 +5,14 @@
     <title>Title</title>
 </head>
 <body>
-aetsrydtufyiguoio
+<div th:each="user : ${users}">
+    user id = <b th:int="${user.getId}"></b>
+    user name <b th:text="${user.getFirstName()}"></b>
+    <b th:text="${user.getLastName()}"></b>
+    age - <b th:text="${user.getAge()}"></b>
+<!--    Авто - <b th:text="${user.getFirstName()}"></b>-->
+<!--    <b th:text="${user.getLastName }"></b> ,-->
+<!--    Владелец - <b th:text="${car.getCarOwner()}"></b>-->
+</div>
 </body>
 </html>

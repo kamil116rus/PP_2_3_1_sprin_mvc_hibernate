@@ -10,19 +10,20 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-@RequestMapping("/users")
+@RequestMapping("/")
 public class UserController {
-    private final UserServise servise;
+    private final UserServiselmp servise;
 
 @Autowired
-    public UserController(UserServise servise) {
+    public UserController(UserServiselmp servise) {
         this.servise = servise;
     }
 
-    @GetMapping
+    @GetMapping("/users")
     public String users(@RequestParam(value = "count", defaultValue = "5") int count,
                         Model model, UserServiselmp servise) {
+        System.out.println("dfyguhj");
     model.addAttribute("users", servise.index(count));
-    return "cars";
+    return "users";
     }
 }

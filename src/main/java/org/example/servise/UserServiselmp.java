@@ -5,13 +5,14 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 @Service
 @Component
 @Repository
 public class UserServiselmp implements UserServise{
 
-    private  List<User> users;
+    private  List<User> users = new ArrayList<>();
     {
         users.add(new User("rick", "dalton", 26));
         users.add(new User("Nick", "Tusday", 15));

@@ -1,4 +1,9 @@
 package org.example.dao;
 
-public class UserDao {
+import org.example.model.User;
+
+import java.util.List;
+
+public interface UserDao {
+    List<User> index(int count);
 }
