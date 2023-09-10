@@ -7,4 +7,6 @@ import java.util.List;
 public interface UserServise {
 
     List<User> index(int count);
+
+    User show(int id);
 }

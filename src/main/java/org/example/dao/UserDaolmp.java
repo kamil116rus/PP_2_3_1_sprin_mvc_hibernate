@@ -1,8 +1,11 @@
 package org.example.dao;
 
 import org.example.model.User;
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import javax.persistence.TypedQuery;
 import java.util.ArrayList;
 import java.util.List;
 @Component
@@ -16,17 +19,24 @@ public class UserDaolmp implements UserDao{
         users.add(new User(4,"vitor", "chernii", 36));
         users.add(new User(5,"rock", "live", 45));
     }
+    @Autowired
+    private SessionFactory sessionFactory;
+
     @Override
-    public List<User> index(int count) {
-        if(count>=5) {
-            return users;
-        } else {
-            return users.stream().limit(count).toList();
-        }
+    public void add(User user) {
+        sessionFactory.getCurrentSession().save(user);
     }
 
     @Override
-    public User show(int id) {
-        return users.stream().filter(User->User.getId() == id).findAny().orElse(null);
+    @SuppressWarnings("unchecked")
+    public List<User> listUsers() {
+        TypedQuery<User> query = sessionFactory.getCurrentSession().createQuery("from User");
+        return query.getResultList();
+    }
+
+    public User getUser(int id) {
+        String hql = "FROM User user LEFT OUTER JOIN FETCH user.id WHERE user.id=:id" ;//car.model=:model and user.car.series=:series";
+
+        return sessionFactory.getCurrentSession().createQuery(hql, User.class).setParameter("id", id).uniqueResult();
     }
 }

@@ -2,6 +2,8 @@ package org.example.controllers;
 
 import org.example.dao.UserDao;
 import org.example.dao.UserDaolmp;
+import org.example.servise.UserServise;
+import org.example.servise.UserServiselmp;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -13,16 +15,16 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 @RequestMapping("/users")
 public class UserController {
-    private final UserDao servise;
+    private final UserServise servise;
 
 @Autowired
-    public UserController(UserDaolmp servise) {
+    public UserController(UserServise servise) {
         this.servise = servise;
     }
 
     @GetMapping
     public String users(@RequestParam(value = "count", defaultValue = "5") int count,
-                        Model model, UserDaolmp servise) {
+                        Model model, UserServiselmp servise) {
         System.out.println("dfyguhj");
     model.addAttribute("users", servise.index(count));
     return "users";

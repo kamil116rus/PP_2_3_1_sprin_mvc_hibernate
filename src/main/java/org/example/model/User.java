@@ -2,12 +2,12 @@ package org.example.model;
 
 import javax.persistence.*;
 
-//@Entity
+@Entity
 @Table(name = "users")
 public class User {
 
-   // @Id
-   // @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
     @Column(name = "name")

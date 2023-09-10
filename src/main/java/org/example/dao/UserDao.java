@@ -5,6 +5,9 @@ import org.example.model.User;
 import java.util.List;
 
 public interface UserDao {
-    List<User> index(int count);
-    User show(int id);
+    void add(User user);
+
+    List<User> listUsers();
+
+    public User getUser(int id);
 }

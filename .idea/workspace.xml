@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="untitled5:war" />
+      <artifact name="sprin-mvc-hibernate:war" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -10,13 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1dc1599e-e452-45dd-bc77-95fbaa18e230" name="Changes" comment="ds">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/users/id.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/74da8d07-b886-4734-9bbd-84d1c161164c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/74da8d07-b886-4734-9bbd-84d1c161164c.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/74da8d07-b886-4734-9bbd-84d1c161164c/storage_v2/_src_/schema/myDB.KlszAA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/74da8d07-b886-4734-9bbd-84d1c161164c/storage_v2/_src_/schema/myDB.KlszAA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/config/AppConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controllers/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/UserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/UserDaolmp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/UserDaolmp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/users.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/users.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/servise/UserServise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/servise/UserServise.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/servise/UserServiselmp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/servise/UserServiselmp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,12 +40,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SWAP_SIDES_IN_COMPARE_BRANCHES" value="true" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "kamil116rus"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;kamil116rus&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -82,7 +87,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "project.propVCSSupport.ChangelistConflict",
-    "spring.configuration.checksum": "edcf523a7d25b80a70409c82eeb9042f",
+    "spring.configuration.checksum": "9582598211aa23d00845619a09596c13",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -109,7 +114,7 @@
     <configuration name="Tomcat 9.0.80" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.80" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="untitled5:war">
+        <artifact name="sprin-mvc-hibernate:war">
           <settings>
             <option name="CONTEXT_PATH" value="" />
           </settings>
@@ -190,6 +195,7 @@
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
           <artifact name="untitled5:war" />
+          <artifact name="sprin-mvc-hibernate:war" />
         </option>
       </method>
     </configuration>
@@ -204,6 +210,7 @@
       <updated>1694279997627</updated>
       <workItem from="1694279999206" duration="6109000" />
       <workItem from="1694286342170" duration="7458000" />
+      <workItem from="1694381166683" duration="1303000" />
     </task>
     <task id="LOCAL-00001" summary="ds">
       <option name="closed" value="true" />
