@@ -22,6 +22,18 @@ public class UserController {
         this.servise = servise;
     }
 
+//    @RequestMapping(value = "/superData", method = RequestMethod.POST , produces= MediaType.APPLICATION_JSON_VALUE)
+//    public ResponseEntity<PeopleEntity> peopleEntity(@RequestBody Person transform) {
+//        System.out.println(transform);
+//        PersonService service=new PersonService();
+//        service.addPerson(transform);
+//        PeopleEntity peopleEntity = new PeopleEntity();
+//        peopleEntity.setFirstName("John");
+//        peopleEntity.setLastName("Dorian");
+//
+//        return new ResponseEntity<PeopleEntity>(peopleEntity, HttpStatus.OK);
+//    }
+
     @GetMapping
     public String users(@RequestParam(value = "count", defaultValue = "5") int count,
                         Model model, UserServiselmp servise) {
@@ -34,4 +46,6 @@ public class UserController {
     model.addAttribute("user", servise.show(id));
     return "users/id";
     }
+
+
 }

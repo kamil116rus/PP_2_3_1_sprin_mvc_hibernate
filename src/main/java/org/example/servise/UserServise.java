@@ -9,4 +9,8 @@ public interface UserServise {
     List<User> index(int count);
 
     User show(int id);
+    void add(User user);
+
+
+
 }
