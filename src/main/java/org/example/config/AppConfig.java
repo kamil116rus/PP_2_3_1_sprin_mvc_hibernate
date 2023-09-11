@@ -37,7 +37,7 @@ public class AppConfig {
     }
 
 
-@Bean
+    @Bean
     public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
         LocalContainerEntityManagerFactoryBean factoryBean =
                 new LocalContainerEntityManagerFactoryBean();
@@ -46,7 +46,7 @@ public class AppConfig {
         factoryBean.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
         factoryBean.setJpaProperties(getHibernateProperties());
         return factoryBean;
-}
+    }
 
     @Bean
     public PlatformTransactionManager platformTransactionManager() {
@@ -55,10 +55,12 @@ public class AppConfig {
 
         return manager;
     }
+
     @Bean
-    public PersistenceExceptionTranslationPostProcessor exceptionTranslation(){
+    public PersistenceExceptionTranslationPostProcessor exceptionTranslation() {
         return new PersistenceExceptionTranslationPostProcessor();
     }
+
     @Bean
     public DataSource getDataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
@@ -70,9 +72,9 @@ public class AppConfig {
     }
 
     public Properties getHibernateProperties() {
-        Properties properties=null;
+        Properties properties = null;
         try {
-            properties= new Properties();
+            properties = new Properties();
             InputStream inputStream = getClass().getClassLoader().getResourceAsStream("hibernate.properties");
             properties.load(inputStream);
 

@@ -17,34 +17,24 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class UserController {
     private final UserServise servise;
 
-@Autowired
+    @Autowired
     public UserController(UserServise servise) {
         this.servise = servise;
     }
 
-//    @RequestMapping(value = "/superData", method = RequestMethod.POST , produces= MediaType.APPLICATION_JSON_VALUE)
-//    public ResponseEntity<PeopleEntity> peopleEntity(@RequestBody Person transform) {
-//        System.out.println(transform);
-//        PersonService service=new PersonService();
-//        service.addPerson(transform);
-//        PeopleEntity peopleEntity = new PeopleEntity();
-//        peopleEntity.setFirstName("John");
-//        peopleEntity.setLastName("Dorian");
-//
-//        return new ResponseEntity<PeopleEntity>(peopleEntity, HttpStatus.OK);
-//    }
 
     @GetMapping
     public String users(@RequestParam(value = "count", defaultValue = "5") int count,
                         Model model, UserServiselmp servise) {
         System.out.println("dfyguhj");
-    model.addAttribute("users", servise.index(count));
-    return "users";
+        model.addAttribute("users", servise.index(count));
+        return "users";
     }
+
     @GetMapping("/{id}")
     public String show(@PathVariable("id") int id, Model model) {
-    model.addAttribute("user", servise.show(id));
-    return "users/id";
+        model.addAttribute("user", servise.show(id));
+        return "users/id";
     }
 
 

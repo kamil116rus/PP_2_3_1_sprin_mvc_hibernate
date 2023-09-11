@@ -5,8 +5,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
-import org.springframework.stereotype.Component;
-
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
@@ -14,29 +12,29 @@ import java.util.List;
 
 @Component
 @Repository
-public class UserDaolmp implements UserDao{
+public class UserDaolmp implements UserDao {
 
-@PersistenceContext
-private EntityManager entityManager;
+    @PersistenceContext
+    private EntityManager entityManager;
 
-//    public EntityManager getEntityManager() {
+    //    public EntityManager getEntityManager() {
 //        return entityManager;
 //    }
-@Autowired
-    public void setEntityManager(EntityManager entityManager) {
-        this.entityManager = entityManager;
-    }
+    //@Autowired
+//    public void setEntityManager(EntityManager entityManager) {
+//        this.entityManager = entityManager;
+//    }
 
     @Override
     public void add(User user) {
-       // sessionFactory.getCurrentSession().save(user);
+        // sessionFactory.getCurrentSession().save(user);
         entityManager.persist(user);
     }
 
     @Override
     @SuppressWarnings("unchecked")
     public List<User> listUsers() {
-       // TypedQuery<User> query = sessionFactory.getCurrentSession().createQuery("from User");
+        // TypedQuery<User> query = sessionFactory.getCurrentSession().createQuery("from User");
         Query query = entityManager.createQuery("select u from User u", User.class);
         //List<User> persons = (List<User>) query.getResultList();
         return query.getResultList();

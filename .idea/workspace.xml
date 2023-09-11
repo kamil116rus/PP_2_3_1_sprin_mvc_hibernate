@@ -10,20 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1dc1599e-e452-45dd-bc77-95fbaa18e230" name="Changes" comment="добавил dao">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/new.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/74da8d07-b886-4734-9bbd-84d1c161164c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/74da8d07-b886-4734-9bbd-84d1c161164c.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/74da8d07-b886-4734-9bbd-84d1c161164c/storage_v2/_src_/schema/myDB.KlszAA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/74da8d07-b886-4734-9bbd-84d1c161164c/storage_v2/_src_/schema/myDB.KlszAA.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/config/AppConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controllers/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/UserDaolmp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/UserDaolmp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/servise/UserServise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/servise/UserServise.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/servise/UserServiselmp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/servise/UserServiselmp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -234,7 +226,7 @@
       <updated>1694279997627</updated>
       <workItem from="1694279999206" duration="6109000" />
       <workItem from="1694286342170" duration="7458000" />
-      <workItem from="1694381166683" duration="19338000" />
+      <workItem from="1694381166683" duration="20881000" />
     </task>
     <task id="LOCAL-00001" summary="ds">
       <option name="closed" value="true" />
@@ -252,7 +244,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694382559866</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="добавил dao">
+      <option name="closed" value="true" />
+      <created>1694459802158</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1694459802158</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
