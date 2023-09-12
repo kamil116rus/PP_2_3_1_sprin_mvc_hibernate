@@ -6,9 +6,9 @@ import java.util.List;
 
 public interface UserServise {
 
-    List<User> index(int count);
+    List<User> index(Integer count);
 
-    User show(int id);
+    User show(Integer id);
     void add(User user);
 
 

@@ -9,5 +9,5 @@ public interface UserDao {
 
     List<User> listUsers();
 
-    public User getUser(int id);
+    public User getUser(Integer id);
 }

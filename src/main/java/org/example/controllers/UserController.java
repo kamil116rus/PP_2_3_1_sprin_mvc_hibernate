@@ -13,9 +13,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-@RequestMapping("/users")
+@RequestMapping("/")
 public class UserController {
-    private final UserServise servise;
+    private  final UserServise servise;
+   // public UserController() {}
 
     @Autowired
     public UserController(UserServise servise) {
@@ -24,7 +25,7 @@ public class UserController {
 
 
     @GetMapping
-    public String users(@RequestParam(value = "count", defaultValue = "5") int count,
+    public String users(@RequestParam(value = "count", defaultValue = "5") Integer count,
                         Model model, UserServiselmp servise) {
         System.out.println("dfyguhj");
         model.addAttribute("users", servise.index(count));
@@ -32,7 +33,7 @@ public class UserController {
     }
 
     @GetMapping("/{id}")
-    public String show(@PathVariable("id") int id, Model model) {
+    public String show(@PathVariable("id") Integer id, Model model) {
         model.addAttribute("user", servise.show(id));
         return "users/id";
     }

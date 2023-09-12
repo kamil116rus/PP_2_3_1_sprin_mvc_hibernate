@@ -8,7 +8,7 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Integer id;
 
     @Column(name = "name")
     private String firstName;
@@ -17,30 +17,30 @@ public class User {
     private String lastName;
 
     @Column(name = "age")
-    private int age;
+    private Integer age;
 
 
     public User() {
     }
 
-    public User(int id, String firstName, String lastName, int age) {
+    public User(Integer id, String firstName, String lastName, Integer age) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
     }
 
-    public User(String firstName, String lastName, int age) {
+    public User(String firstName, String lastName, Integer age) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -60,11 +60,11 @@ public class User {
         this.lastName = lastName;
     }
 
-    public int getAge() {
+    public Integer getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(Integer age) {
         this.age = age;
     }
 

@@ -48,7 +48,7 @@ public UserDao getUserDao() {
 //    }
     @Override
     @Transactional
-    public List<User> index(int count) {
+    public List<User> index(Integer count) {
         if(count>=5) {
             return  getUserDao().listUsers();
         } else {
@@ -57,7 +57,7 @@ public UserDao getUserDao() {
     }
     @Override
     @Transactional(readOnly = true)
-    public User show(int id) {
+    public User show(Integer id) {
         return userDao.getUser(id);
        // return userDao.listUsers().stream().filter(User->User.getId() == id).findAny().orElse(null);
     }

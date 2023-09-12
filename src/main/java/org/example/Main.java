@@ -3,6 +3,7 @@ package org.example;
 import org.example.model.User;
 import org.example.servise.UserServiselmp;
 
+import javax.persistence.EntityManager;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,6 +11,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
         UserServiselmp users = new UserServiselmp();
+
 
 
         users.add(new User(1,"rick", "dalton", 26));
